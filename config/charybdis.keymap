@@ -6,33 +6,6 @@
 
 / { 
     behaviors {
-        ht: hold_tap {
-            display-name = "Hold Tap";
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <200>;
-            // global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-        lt: layer_tap {
-            display-name = "Layer Tap";
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
-            #binding-cells = <2>;
-            // flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            // global-quick-tap;
-            bindings = <&mo>, <&kp>;
-        };
-        rot_msc: sensor_rotate_msc {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-            tap-ms = <20>;
         };
         comexcl: comma_excl {
             compatible = "zmk,behavior-mod-morph";

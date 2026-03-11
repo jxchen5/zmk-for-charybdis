@@ -6,7 +6,6 @@
 
 / { 
     behaviors {
-        };
         comexcl: comma_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

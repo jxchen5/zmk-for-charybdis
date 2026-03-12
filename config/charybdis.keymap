@@ -158,8 +158,8 @@
         //│ Cut      │  Copy           │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ Sticky LGUI │ One Word Right  │ Delete Word    │
             &kp LC(X)   &kp LC(C)         &kp LC(V)        &kp LC(Z)           &kp LC(Y)           &kp LC(LEFT)   &sk LCTRL       &sk LGUI      &kp LC(RIGHT)     &kp LC(BACKSPACE)
         //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯     
-                        &trans            &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans        &trans
-        //           ╰─────────────────┴────────────────┴────────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────┴─────────────────╯ 
+                                          &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans    
+        //                             ╰────────────────┴────────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────╯ 
             >;
         };
 

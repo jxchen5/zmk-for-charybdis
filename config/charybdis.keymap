@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+p#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -167,7 +167,7 @@
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
         //│ CAPS     | Toggle Program  │ Close Pprogram │ Switch Language    │ Redo in Vim │   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
-            &trans   &trans       &trans        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+            &To1_macro   &To0_macro       &To2_macro        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
         //│ TAB      │  HOME           │  END           │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
             &kp TAB    &kp HOME           &kp END          &kp BACKSPACE       &kp DEL             &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
@@ -177,23 +177,7 @@
         //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯     
                                           &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans    
         //                             ╰────────────────┴────────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────╯ 
-            >;            >;
-                
-                
-               
+            >;                           
         };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
-                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
-                                      &trans     &trans       &trans
-            >;
-                
-                
-        };*/
     };
 };

@@ -178,7 +178,7 @@
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
         //│ CAPS     | Toggle Program  │ Close Pprogram │ Switch Language    │ Redo in Vim │   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
-            &kp CAPS   &kp LA(TAB)       &kp LA(F4)        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+            &To1_macro   &To0_macro       &To2_macro        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
         //│ TAB      │  HOME           │  END           │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
             &kp TAB    &kp HOME           &kp END          &kp BACKSPACE       &kp DEL             &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)

@@ -94,6 +94,11 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp O &kp X>;
         };
+        ph: ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp P &kp H>;
+        };
         que: que {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -150,7 +155,7 @@
             &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &none      &none       &scr       &none     &cmd_prompt    &none      &none       &none      &none     &none   
+            &none      &none       &scr       &ph     &cmd_prompt    &none      &none       &none      &none     &none   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &trans    &kp DOT    &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -177,15 +182,15 @@
         layer_3 {
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
-        //│ CAPS     | Toggle Program  │ Close Pprogram │ Switch Language    │ Redo in Vim │   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
-            &To1_macro   &To0_macro       &To2_macro        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+        //│          | Toggle Program  │  Ctrl + Shift  │  Cut               │             │   │ Reopen Tab   │ Close Program │ Close Tab   │  Switch Tab     │ LALT           │
+            &none      &kp LA(TAB)        &sk LC(LSHIFT)    &kp LC(X)           &none              &kp LC(LS(T))   &kp LA(F4)   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
-        //│ TAB      │  HOME           │  END           │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
-            &kp TAB    &kp HOME           &kp END          &kp BACKSPACE       &kp DEL             &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
+        //│ TAB      │  CAPS           │  Copy          │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
+            &kp TAB    &kp CAPS           &kp LC(C)         &kp BACKSPACE       &kp DEL            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
-        //│ Cut      │  Copy           │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ Sticky LGUI │ One Word Right  │ Delete Word    │
-            &kp LC(X)   &kp LC(C)         &kp LC(V)        &kp LC(Z)           &kp LC(Y)           &kp LC(LEFT)   &sk LCTRL       &sk LGUI      &kp LC(RIGHT)     &kp LC(BACKSPACE)
-        //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯     
+        //│ HOME     │  END            │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ Sticky LGUI │ One Word Right  │ Delete Word    │
+            &kp HOME   &kp END            &kp LC(V)        &kp LC(Z)           &kp LC(Y)          &kp LC(LEFT)    &sk LCTRL       &sk LGUI      &kp LC(RIGHT)     &kp LC(BACKSPACE)
+        //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯
                                           &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans       
         //                             ╰─────────────────┴───────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────╯ 
             >;

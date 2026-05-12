@@ -3,14 +3,10 @@
 #include <physical_layouts.dtsi>
 #include <input/processors.dtsi>
 / {
-	trackpad_listener: trackpad_listener {
-	    input-processors = <&zip_xy_scaler 1 1>;
-	
-	    scroller: scroller {
+	scroller: scroller {
 	        layers = <2>;
 	        input-processors = <&zip_xy_to_scroll_mapper>;
-	    };
-	}
+	};
     Nano35_layout: Nano35_layout {
         compatible = "zmk,physical-layout";
         display-name = "Nano35";

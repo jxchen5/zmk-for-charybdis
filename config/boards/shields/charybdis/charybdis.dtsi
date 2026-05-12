@@ -2,7 +2,6 @@
 #include <dt-bindings/led/led.h>
 #include <physical_layouts.dtsi>
 / {
-	};
     Nano35_layout: Nano35_layout {
         compatible = "zmk,physical-layout";
         display-name = "Nano35";

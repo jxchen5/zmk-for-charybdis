@@ -4,7 +4,7 @@
 #include <input/processors.dtsi>
 / {
 	scroller: scroller {
-	        layers = <1, 2>;
+	        layers = <2>;
 	        input-processors = <&zip_xy_to_scroll_mapper>;
 	};
     Nano35_layout: Nano35_layout {

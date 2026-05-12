@@ -5,6 +5,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / { 
+    trackpad_listener {
+    input-processors = <&zip_xy_scaler 1 1>;
+
+        scroller {
+            layers = <2>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+    };
     behaviors {
         ht: hold_tap {
             display-name = "Hold Tap";

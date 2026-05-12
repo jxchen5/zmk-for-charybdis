@@ -1,11 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 #include <physical_layouts.dtsi>
-#include <input/processors.dtsi>
 / {
-	scroller: scroller {
-	        layers = <2>;
-	        input-processors = <&zip_xy_to_scroll_mapper>;
 	};
     Nano35_layout: Nano35_layout {
         compatible = "zmk,physical-layout";

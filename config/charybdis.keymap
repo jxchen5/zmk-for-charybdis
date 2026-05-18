@@ -188,7 +188,7 @@
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
         //│          | Toggle Program  │  Ctrl + Shift  │  Cut               │ Ctrl+Sft+Win│   │ Reopen Tab   │ Close Program │ Close Tab   │  Switch Tab     │ LALT           │
-            &none      &kp LA(TAB)        &sk LC(LSHIFT)    &kp LC(X)         &sk LC(LS(LGUI))      &kp LC(LS(T))   &kp LA(F4)   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+            &none      &kp LA(TAB)        &sk LC(LSHIFT)    &kp LC(X)         &kp LC(LS(LG(B)))    &kp LC(LS(T))   &kp LA(F4)   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
         //│ TAB      │  CAPS           │  Copy          │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
             &kp TAB    &kp CAPS           &kp LC(C)         &kp BACKSPACE       &kp DEL            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)

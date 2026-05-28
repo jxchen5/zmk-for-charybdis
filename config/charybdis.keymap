@@ -163,8 +163,8 @@
         //│  -       │  {       │  }       │  _       │  [       │   │  ]       │  \       │  (       │  )       │  :       │  
             &kp MINUS   &kp LBRC   &kp RBRC   &kp UNDER &kp LBKT       &kp RBKT   &kp BSLH   &kp LPAR   &kp RPAR   &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  repeat  │  '       │  /       │  &       │  @       │   │  ;       │  *       │  $       │  "       │  repeat  |
-            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp SEMI   &kp ASTRK  &kp DLLR   &kp DQT    &key_repeat
+        //│  repeat  │  '       │  /       │  &       │  @       │   │  $       │  *       │  $       │  "       │  repeat  |
+            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp DLLR   &kp ASTRK  &kp DLLR   &kp DQT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯ 
                                    &trans     &trans    &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
